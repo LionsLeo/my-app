@@ -14,24 +14,37 @@ const ACarousel = ({}: ACarouselProps) => {
 
   const textRef = useRef<HTMLDivElement | null>(null);
   const imgRef = useRef<HTMLDivElement | null>(null);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
+
+  const updateDimensions = () => {
+    setWidth(window.innerWidth);
+  };
 
   useEffect(() => {
     setAnim(true);
   }, [index]);
 
   // AOS.init();
+  const useWidth = width > 750 ? 350 : 200;
 
   return (
-    <>
+    <div className="mt-5" style={width < 750 ? { paddingTop: "90px" } : {}}>
       <div className="d-sm-flex justify-content-around align-items-center slides">
-        <div className="text-grid w-50">
-          <div
-            ref={textRef}
-            // className={anim ? "anim-loader" : ""}
-            id="grid-title"
-          >
-            {carouselData[index].title}
-          </div>
+        <div className="text-grid w-90">
+          <a href={carouselData[index].href}>
+            <div
+              ref={textRef}
+              // className={anim ? "anim-loader" : ""}
+              id="grid-title"
+            >
+              {carouselData[index].title}
+            </div>
+          </a>
           <div
             ref={textRef}
             // className={anim ? "anim-loader" : ""}
@@ -40,8 +53,17 @@ const ACarousel = ({}: ACarouselProps) => {
             {carouselData[index].text}
           </div>
         </div>
-        <div ref={imgRef} className={anim ? "anim-loader" : ""}>
-          <img src={carouselData[index].imgPath} width="200" />
+        <div
+          ref={imgRef}
+          className={anim ? "anim-loader image-ka-baap" : "image-ka-baap"}
+        >
+          <a href={carouselData[index].href}>
+            <img
+              src={carouselData[index].imgPath}
+              // width={useWidth}
+              height={width > 768 ? 300: 200}
+            />
+          </a>
         </div>
       </div>
       <div className="d-md-flex justify-content-end align-items-center navigate">
@@ -79,7 +101,7 @@ const ACarousel = ({}: ACarouselProps) => {
           }}
         ></i>
       </div>
-    </>
+    </div>
   );
 };
 

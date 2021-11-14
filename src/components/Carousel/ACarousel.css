@@ -12,7 +12,7 @@
 
 .slides {
   height: 65vh;
-  width: 95vw;
+  width: 100vw;
   display: block;
   margin: auto;
 }
@@ -24,19 +24,22 @@
   justify-content: space-between;
 }
 
+
+
 #grid-title {
   font-size: 3rem;
   color: var(--yellow);
 }
 
 #grid-text {
+  width: 30vw;
   font-size: 1.2rem;
   color: aliceblue;
 }
 
 @media only screen and (max-width: 768px) {
   .slides {
-    height: 50vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -46,6 +49,17 @@
   .navigate {
     display: block;
     margin: auto;
+    text-align: center;
+  }
+ 
+
+  #grid-text {
+    width: 90%;
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+  #grid-title {
     text-align: center;
   }
 }

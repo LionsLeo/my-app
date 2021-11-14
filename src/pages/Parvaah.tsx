@@ -18,13 +18,16 @@ const Parvaah = ({}: ParvaahProps) => {
 
           <div className="d-flex justify-content-around align-items-center text-center mb-5 parvaah">
             <img
-              src="/assets/logos/Parvaah Logo.png"
+              src={process.env.PUBLIC_URL + "/assets/logos/Parvaah Logo.png"}
               alt=""
               className="parvaah logo"
             />
             <div className="vl"></div>
             <img
-              src="/assets/logos/Sustainable Reality logo.png"
+              src={
+                process.env.PUBLIC_URL +
+                "/assets/logos/Sustainable Reality logo.png"
+              }
               alt=""
               className="parvaah logo"
             />
@@ -49,8 +52,8 @@ const Parvaah = ({}: ParvaahProps) => {
         <div className="container p-3 text-white">
           <div className="row">
             <div className="col-sm-6 col-md-6 flex-column d-flex justify-content-center order-md-2">
-              <div className="align-items-center d-flex justify-content-center flex-column mb-3">
-                <div className="fs-3 fw-bold text-left">Eco Run (2019)</div>
+              <div className="d-flex flex-column mb-3">
+                <div className="fs-3 fw-bold text-left p-titles">Eco Run (2019)</div>
                 <div
                   className="align-items-center d-flex justify-content-center flex-column mb-3"
                   style={{ fontSize: 15, fontFamily: "Roboto" }}
@@ -73,7 +76,10 @@ const Parvaah = ({}: ParvaahProps) => {
               >
                 <img
                   style={{ width: "50%" }}
-                  src="../assets/images/Parvaah/ecorun_2019.png"
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/Parvaah/ecorun_2019.png"
+                  }
                   alt="Beach Clean-up"
                 />
               </div>
@@ -85,8 +91,8 @@ const Parvaah = ({}: ParvaahProps) => {
         <div className="container p-3 text-white">
           <div className="row">
             <div className="col-sm-6 col-md-6 flex-column d-flex justify-content-center">
-              <div className="align-items-center d-flex justify-content-center flex-column mb-3">
-                <div className="fs-3 fw-bold text-left">
+              <div className="d-flex flex-column mb-3">
+                <div className="fs-3 fw-bold text-left p-titles">
                   Signal Shala (2019)
                 </div>
                 <div
@@ -111,7 +117,10 @@ const Parvaah = ({}: ParvaahProps) => {
               >
                 <img
                   style={{ width: "50%" }}
-                  src="/assets/images/Parvaah/Signal_Shala_2019.png"
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/Parvaah/Signal_Shala_2019.png"
+                  }
                   alt="Beach Clean-up"
                 />
               </div>
@@ -123,8 +132,8 @@ const Parvaah = ({}: ParvaahProps) => {
         <div className="container p-3 text-white">
           <div className="row">
             <div className="col-sm-6 col-md-6 flex-column d-flex justify-content-center order-md-2">
-              <div className="align-items-center d-flex justify-content-center flex-column mb-3">
-                <div className="fs-3 fw-bold text-left">
+              <div className="d-flex flex-column mb-3">
+                <div className="fs-3 fw-bold text-left p-titles">
                   Secret Santa (2019)
                 </div>
                 <div
@@ -150,7 +159,10 @@ const Parvaah = ({}: ParvaahProps) => {
               >
                 <img
                   style={{ width: "50%" }}
-                  src="../assets/images/Parvaah/Secret_Santa_2019.png"
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/Parvaah/Secret_Santa_2019.png"
+                  }
                   alt="Beach Clean-up"
                 />
               </div>
@@ -162,8 +174,8 @@ const Parvaah = ({}: ParvaahProps) => {
         <div className="container p-3 text-white">
           <div className="row">
             <div className="col-sm-6 col-md-6 flex-column d-flex justify-content-center">
-              <div className="align-items-center d-flex justify-content-center flex-column mb-3">
-                <div className="fs-3 fw-bold text-left">
+              <div className="d-flex flex-column mb-3">
+                <div className="fs-3 fw-bold text-left p-titles">
                   Diwali Donation Drive (2019)
                 </div>
                 <div
@@ -188,7 +200,10 @@ const Parvaah = ({}: ParvaahProps) => {
               >
                 <img
                   style={{ width: "50%" }}
-                  src="/assets/images/Parvaah/Diwali_Donation_2019.png"
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/Parvaah/Diwali_Donation_2019.png"
+                  }
                   alt="Beach Clean-up"
                 />
               </div>
@@ -200,8 +215,8 @@ const Parvaah = ({}: ParvaahProps) => {
         <div className="container p-3 text-white">
           <div className="row">
             <div className="col-sm-6 col-md-6 flex-column d-flex justify-content-center order-md-2">
-              <div className="align-items-center d-flex justify-content-center flex-column mb-3">
-                <div className="fs-3 fw-bold text-left">
+              <div className="d-flex flex-column mb-3">
+                <div className="fs-3 fw-bold text-left p-titles">
                   Tree Plantation Drive (2019)
                 </div>
                 <div
@@ -226,7 +241,10 @@ const Parvaah = ({}: ParvaahProps) => {
               >
                 <img
                   style={{ width: "50%" }}
-                  src="../assets/images/Parvaah/tree_plantation_2019.png"
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/Parvaah/tree_plantation_2019.png"
+                  }
                   alt="Beach Clean-up"
                 />
               </div>
@@ -239,8 +257,8 @@ const Parvaah = ({}: ParvaahProps) => {
         <div className="container p-3 text-white">
           <div className="row">
             <div className="col-sm-6 col-md-6 flex-column d-flex justify-content-center">
-              <div className="align-items-center d-flex justify-content-center flex-column mb-3">
-                <div className="fs-3 fw-bold text-left">
+              <div className="d-flex flex-column mb-3">
+                <div className="fs-3 fw-bold text-left p-titles">
                   Know Your Plastic (2020)
                 </div>
                 <div
@@ -265,7 +283,10 @@ const Parvaah = ({}: ParvaahProps) => {
               >
                 <img
                   style={{ width: "50%" }}
-                  src="/assets/images/Parvaah/Know_your_plastic_2020.png"
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/Parvaah/Know_your_plastic_2020.png"
+                  }
                   alt="Beach Clean-up"
                 />
               </div>
@@ -277,8 +298,8 @@ const Parvaah = ({}: ParvaahProps) => {
         <div className="container p-3 text-white">
           <div className="row">
             <div className="col-sm-6 col-md-6 flex-column d-flex justify-content-center order-md-2">
-              <div className="align-items-center d-flex justify-content-center flex-column mb-3">
-                <div className="fs-3 fw-bold text-left">
+              <div className="d-flex flex-column mb-3">
+                <div className="fs-3 fw-bold text-left p-titles">
                   Beautification (2020)
                 </div>
                 <div
@@ -303,7 +324,10 @@ const Parvaah = ({}: ParvaahProps) => {
               >
                 <img
                   style={{ width: "50%" }}
-                  src="../assets/images/Parvaah/Beautification_2020.png"
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/Parvaah/Beautification_2020.png"
+                  }
                   alt="Beach Clean-up"
                 />
               </div>
@@ -314,8 +338,8 @@ const Parvaah = ({}: ParvaahProps) => {
         <div className="container p-3 text-white">
           <div className="row">
             <div className="col-sm-6 col-md-6 flex-column d-flex justify-content-center">
-              <div className="align-items-center d-flex justify-content-center flex-column mb-3">
-                <div className="fs-3 fw-bold text-left">
+              <div className="d-flex flex-column mb-3">
+                <div className="fs-3 fw-bold text-left p-titles">
                   Diwali Donation Drive (2020)
                 </div>
                 <div
@@ -340,7 +364,10 @@ const Parvaah = ({}: ParvaahProps) => {
               >
                 <img
                   style={{ width: "50%" }}
-                  src="/assets/images/Parvaah/Diwali_Donation_2020.png"
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/Parvaah/Diwali_Donation_2020.png"
+                  }
                   alt="Beach Clean-up"
                 />
               </div>
@@ -352,8 +379,8 @@ const Parvaah = ({}: ParvaahProps) => {
         <div className="container p-3 text-white">
           <div className="row">
             <div className="col-sm-6 col-md-6 flex-column d-flex justify-content-center order-md-2">
-              <div className="align-items-center d-flex justify-content-center flex-column mb-3">
-                <div className="fs-3 fw-bold text-left">
+              <div className="d-flex flex-column mb-3">
+                <div className="fs-3 fw-bold text-left p-titles">
                   Mangrove Clean-Up (2020)
                 </div>
                 <div
@@ -378,7 +405,10 @@ const Parvaah = ({}: ParvaahProps) => {
               >
                 <img
                   style={{ width: "50%" }}
-                  src="../assets/images/Parvaah/Mangrove_clean_up_2020.png"
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/Parvaah/Mangrove_clean_up_2020.png"
+                  }
                   alt="Beach Clean-up"
                 />
               </div>

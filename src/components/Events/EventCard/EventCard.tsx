@@ -11,12 +11,7 @@ const EventCard = ({ event }: EventCardProps) => {
     <div className="d-flex justify-content-center align-items-center event-card">
       <div className="row w-85 d-flex justify-content-center align-items-center">
         <div className="col">
-          <img
-            src="/assets/images/events/events_image.png"
-            alt=""
-            width="350"
-            className="event-"
-          />
+          <img src={event.eventImgPath} alt="" width="350" className="event-" />
         </div>
         <div className="col event-info">
           <div>
@@ -27,7 +22,7 @@ const EventCard = ({ event }: EventCardProps) => {
           <hr />
           <div>
             <img
-              src="/assets/images/events/team.png"
+              src={process.env.PUBLIC_URL + "/assets/images/events/team.png"}
               width="20"
               className="event-img"
             />
@@ -36,7 +31,7 @@ const EventCard = ({ event }: EventCardProps) => {
           <hr />
           <div>
             <img
-              src="/assets/images/events/prize.png"
+              src={process.env.PUBLIC_URL + "/assets/images/events/prize.png"}
               width="20"
               className="event-img"
             />
@@ -45,7 +40,10 @@ const EventCard = ({ event }: EventCardProps) => {
           <hr />
           <div>
             <img
-              src="/assets/images/events/registration.png"
+              src={
+                process.env.PUBLIC_URL +
+                "/assets/images/events/registration.png"
+              }
               width="20"
               className="event-img"
             />
@@ -55,7 +53,9 @@ const EventCard = ({ event }: EventCardProps) => {
           {event.contactInfo.map((contact) => (
             <div>
               <img
-                src="/assets/images/events/contact.png"
+                src={
+                  process.env.PUBLIC_URL + "/assets/images/events/contact.png"
+                }
                 width="20"
                 className="event-img"
               />
